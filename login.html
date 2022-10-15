@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="login-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Box Games</title>
+</head>
+
+<body>
+  <header>
+    <div class="head-style">
+      <img src="./assets/img/header-img/logo-box.png" alt="logo" id="logo-home">
+
+      <h1>Box-Games</h1>
+
+    </div>
+
+    <nav class="nav-b">
+      <section class="first-sec">
+        <ul class="nav-list">
+          <div class="content centered-elements">
+            <button class="btn btn--2">
+              Inicio
+            </button>
+            <button class="btn btn--2">
+              Nosotros
+            </button>
+            <button class="btn btn--2">
+              Demos
+            </button>
+            <button class="btn btn--2">
+              Contacto
+            </button>
+            <div class="post">
+              <a href="#"><img src="./assets/img/nav -icon/login.png" alt="Login">
+                <p>Login</p>
+              </a>
+            </div>
+            <div class="post">
+              <a href="#"><img src="./assets/img/nav -icon/register.png" alt="register">
+                <p>Registro</p>
+              </a>
+            </div>
+          </div>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <div class="box-form">
+    <input type='checkbox' id='form-switch'>
+    <form id='login-form' action="" method='post'>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button id="login" type='submit'>Login</button>
+      <label id="registro" for='form-switch'><span>Registro</span></label>
+    </form>
+    <form id='register-form' action="" method='post'>
+      <input id="in-reg" type="text" placeholder="Username" required>
+      <input id="in-reg" type="email" placeholder="Email" required>
+      <input id="in-reg" type="password" placeholder="Password" required>
+      <input id="in-reg" type="password" placeholder="Re Password" required>
+      <button id="registro-button" type='submit'>Registrarse</button>
+      <label id="user-reg" for='form-switch'>Ya sos usuario? Ingresa aca </label>
+    </form>
+  </div>
+
+
+</body>

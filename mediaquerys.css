@@ -1,0 +1,208 @@
+/*######TABLET#######*/
+
+@media (max-width: 768px) {
+    
+    /*Header*/
+
+    .head-style{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 25%;
+    }
+
+    /*Nabvar*/
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .centered-elements{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .btn{
+        width: fit-content;
+    }
+
+    /*Portada home*/
+
+    .home{
+       
+        justify-content: space-between;
+        display: flex;
+        
+    }
+
+    .img-home{
+       
+        display: flex;
+        width: fit-content;
+    }
+
+    .img-home img{
+        width: 250px;
+        height: 170px;
+    }
+
+    /*Nosotros*/
+
+    .nosotros p{
+        max-width: 500px;
+    }
+
+    .title-icon{
+        width: 70px;
+        height: 70px;
+    }
+
+    .img-accord h4{
+        margin-top: 150px;
+    }
+
+    .accordian{
+        width: 720px;
+        height: 320px;
+    }
+
+    /*Cards*/
+    
+    #cards-container{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }    
+
+    .card-wrapper{
+        
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .card-img img{
+        width: 250px;
+        height: 280px;
+        
+    }
+
+    
+
+}
+
+/*CELULAR*/
+
+@media (max-width: 375px) {
+    
+    /*header*/
+    .head-style{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-left: 65%;
+    }
+
+   .head-style img{
+        display: none;
+    }
+
+    /*Nav-bar*/
+
+    .nav-b{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-list{
+        display: flex;
+        align-items: center;
+        margin-left: 200px; 
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:10px
+    }
+
+    .icon-logvar{
+       
+        gap: 0px;
+    }
+
+    /*portada*/
+
+    .home{
+       
+        justify-content: space-between;
+        display: flex;
+        gap: 50px;
+    }
+
+    .img-home{
+       
+        display: flex;
+        width: fit-content;
+    }
+
+    .img-home img{
+        width: 170px;
+        height: 100px;
+    }
+
+
+    /*nosotros*/
+
+    .nosotros{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .our-emp{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 150px;
+        margin-top: 40px;
+      
+    }
+
+    .our-emp p{
+        margin-left: 10px;
+    }
+
+
+    .images-nos{
+        border: 1px solid wheat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 40px;
+        gap: 0px;
+    }
+
+    .title-icon{
+        margin-left: 20px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rebeccapurple;
+        
+    }
+    .title-icon h3{
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+
+    }
+
+    
+}
+    
