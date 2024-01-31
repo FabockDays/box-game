@@ -1,266 +1,483 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Box-Games</title>
+  </head>
+  <body>
+    <header id="header" class="menu-container">
+      <!--   Logo -->
+      <div class="logo-box">
+        <img id="header-img" src="./assets/img/header-img/logo-box.png" />
+      </div>
+      <!--   Logo -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="mediaquerys.css">
-  <title>Box Games</title>
-</head>
+      <!--   navbar -->
+      <nav id="nav-bar">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="nav-icon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="#hero" class="nav-link">Inicio</a></li>
+          <li><a href="#content" class="nav-link">Nosotros</a></li>
+          <li><a href="#pricing-container" class="nav-link">Demos</a></li>
+          <li><a href="#contacto-container" class="nav-link">Contacto</a></li>
+          <a class="highlight" href="#" id="loginLink">Login / Registro</a>
+        </ul>
+      </nav>
+      <!--   navbar -->
+    </header>
+    <!-- header ends -->
 
-<body>
-  <header>
-    <div class="head-style">
-      <img src="./assets/img/header-img/logo-box.png" alt="logo" id="logo-home">
+    <main class="container">
+      <section  id="hero" class="hero container">
+        <h1 class="hero-title-primary">Box - Games</h1>
+        <p class="hero-title-sub">
+          ¡Descarga, compra y solicita los mejores juegos y consolas! Regístrate  y accede a nuestros beneficios exclusivos. Bienvenidos a una nueva experiencia. Bienvenidos a  Box-Games .
+        </p>
+      </section>
+      <div class="hero-image">
+        <figure>
+          <svg
+            viewBox="0 0 609 612"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M448.514 294.27V512.377C448.514 520.031 445.474 527.372 440.061 532.784C434.649 538.197 427.308 541.238 419.653 541.238H250.109C242.455 541.238 235.114 538.197 229.701 532.784C224.289 527.372 221.248 520.031 221.248 512.377V79.5855C221.248 71.9311 224.289 64.5902 229.701 59.1777C235.114 53.7653 242.455 50.7246 250.109 50.7246H419.653C427.308 50.7246 434.649 53.7653 440.061 59.1777C445.474 64.5902 448.514 71.9311 448.514 79.5855V294.27Z"
+              fill="gray"
+            />
+            <path
+              d="M406.776 550.407L369.286 498.515C369.286 498.515 344.76 476.34 334.892 468.853C334.805 476.503 335.305 531.379 337.635 550.407H406.776Z"
+              fill="black"
+            />
+            <path
+              d="M441.558 542.089H448.514V473.79C430.95 479.4 345.78 479.91 334.892 468.853C334.892 469.71 351.237 514.049 380.644 548.388H441.558V542.089Z"
+              fill="black"
+            />
+            <path
+              d="M315.69 336.141C313.834 338.181 313.823 342.108 313.823 342.108C311.539 335.259 261.467 210.686 261.467 210.686C261.467 210.686 251.099 215.082 263.048 238.624C259.182 240.909 248.395 249.533 252.848 263.4C256.204 273.824 263.558 277.455 268.148 277.455C267.357 285.284 284.075 364.987 286.243 368.817C291.343 377.823 301.186 387.687 306.974 387.967C313.604 388.299 327.16 382.189 336.416 376.339"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M367.251 286.697C342.047 291.389 310.08 321.025 310.916 327.42C311.697 333.453 327.374 350.88 339.323 359.173"
+              stroke="rgba(184, 184, 29)"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M383.056 272.651C328.996 303.134 327.976 459.311 334.892 468.853C341.664 478.237 422.509 480.695 448.514 474.193"
+              stroke="rgba(184, 184, 29)"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M446.531 291.236C439.11 280.434 429.344 272.575 416.67 269.28"
+              stroke="rgba(184, 184, 29)"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M442.078 372.341C443.445 378.201 446.25 389.171 449.055 399.585"
+              stroke="rgba(184, 184, 29)"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M425.804 359.162C428.436 366.751 431.322 372.004 433.403 372.677C435.953 373.499 441.752 372.677 448.514 370.877"
+              stroke="rgba(184, 184, 29)"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M448.514 292.577C444.042 289.292 439.523 287.681 435.229 288.68"
+              stroke="rgba(184, 184, 29)"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M383.056 272.651V263.889"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M416.67 247.819V284.218C416.67 287.166 408.75 288.986 400.595 289.241"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M416.522 247.819C419.582 249.497 424.203 247.707 427.145 243.596C430.251 239.256 430.313 233.983 427.283 231.81C426.492 231.256 425.56 230.94 424.595 230.897"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M368.22 210.824C367.707 211.915 367.222 213.032 366.767 214.175C358.545 234.967 364.426 256.78 379.899 262.895C380.932 263.304 381.994 263.636 383.076 263.889"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M435.815 235.564C442.073 233.692 449.932 229.23 449.932 220.264C449.932 214.654 444.695 208.483 443.7 201.43C443.19 197.86 444.302 182.993 440.13 177.97C431.46 167.55 426.36 169.682 419.73 167.26C408.184 163.037 403.762 156.04 394.23 156.04C383.408 156.04 379.027 161.65 371.28 161.65C362.421 161.65 355.154 157.57 342.72 157.57C336.09 157.57 327.42 166.24 327.42 173.89C327.42 191.974 344.25 189.383 344.25 193.78C344.25 196.84 343.23 199.267 343.23 203.47C343.23 205.698 344.413 207.55 346.086 208.962"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M274.054 152.913H248.599C241.056 152.913 234.942 159.028 234.942 166.571V192.025C234.942 199.568 241.056 205.683 248.599 205.683H274.054C281.597 205.683 287.711 199.568 287.711 192.025V166.571C287.711 159.028 281.597 152.913 274.054 152.913Z"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M420.526 35.19H249.237C238.156 35.19 227.53 39.5917 219.695 47.4268C211.86 55.262 207.458 65.8887 207.458 76.9692V514.978C207.458 526.058 211.86 536.685 219.695 544.52C227.53 552.355 238.156 556.757 249.237 556.757H420.526C431.606 556.757 442.233 552.355 450.068 544.52C457.903 536.685 462.305 526.058 462.305 514.978V76.9692C462.305 65.8887 457.903 55.262 450.068 47.4268C442.233 39.5917 431.606 35.19 420.526 35.19V35.19ZM448.514 294.27V512.377C448.514 516.167 447.768 519.92 446.318 523.421C444.867 526.923 442.741 530.104 440.061 532.784C437.381 535.464 434.2 537.59 430.698 539.041C427.197 540.491 423.444 541.237 419.654 541.237H250.109C242.455 541.237 235.114 538.197 229.701 532.784C224.289 527.372 221.248 520.031 221.248 512.377V79.5855C221.248 71.9311 224.289 64.5902 229.701 59.1778C235.114 53.7653 242.455 50.7246 250.109 50.7246H278.205V59.6139C278.205 60.6667 278.412 61.7093 278.815 62.682C279.218 63.6546 279.809 64.5385 280.553 65.2829C281.298 66.0274 282.181 66.6179 283.154 67.0208C284.127 67.4237 285.169 67.6311 286.222 67.6311H383.52C384.573 67.6311 385.615 67.4237 386.588 67.0208C387.561 66.6179 388.445 66.0274 389.189 65.2829C389.933 64.5385 390.524 63.6546 390.927 62.682C391.33 61.7093 391.537 60.6667 391.537 59.6139V50.7246H419.633C423.423 50.7246 427.176 51.4711 430.678 52.9215C434.179 54.3719 437.361 56.4978 440.041 59.1778C442.721 61.8577 444.847 65.0394 446.297 68.5409C447.748 72.0425 448.494 75.7954 448.494 79.5855L448.514 294.27Z"
+              fill="rgba(184, 184, 29)"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M508.944 99.9906H447.061C435.882 99.9906 426.819 109.053 426.819 120.232C426.819 131.412 435.882 140.474 447.061 140.474H508.944C520.124 140.474 529.186 131.412 529.186 120.232C529.186 109.053 520.124 99.9906 508.944 99.9906Z"
+              fill="white"
+            />
+            <path
+              d="M450.881 131.065L433.327 113.485V148.645L450.881 131.065Z"
+              fill="white"
+            />
 
-      <h1>Box-Games</h1>
+            <text x="438.118" y="130.011" fill="black" font-size="25" font-family="Arial">G</text>
 
+            <text x="457.118" y="130.011" fill="black" font-size="25" font-family="Arial">a</text>
+
+            <text x="470.118" y="130.011" fill="black" font-size="25" font-family="Arial">m</text>
+
+            <text x="491.003" y="130.011" fill="black" font-size="25" font-family="Arial">e</text>
+
+            <text x="505.892" y="130.011" fill="black" font-size="25" font-family="Arial">s</text>
+
+            
+            <path
+              d="M377.4 216.75C377.4 219.3 376.89 227.46 373.83 229.5"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M375.615 243.015C380.715 243.015 385.305 239.955 385.305 237.915"
+              stroke="black"
+              stroke-width="2.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+            <path
+              d="M388.62 221.085C389.606 221.085 390.405 219.715 390.405 218.025C390.405 216.335 389.606 214.965 388.62 214.965C387.634 214.965 386.835 216.335 386.835 218.025C386.835 219.715 387.634 221.085 388.62 221.085Z"
+              fill="black"
+            />
+            <g clip-path="url(#clip0)">
+              <text
+                x="260"
+                y="179.5"
+                font-size="18"
+                font-weight="600"
+                fill="rgba(184, 184, 29)"
+                text-anchor="middle"
+                alignment-baseline="middle"
+                >
+                  BOX
+              </text>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect
+                  width="37"
+                  height="37"
+                  fill="white"
+                  transform="translate(242 161)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </figure>
+      </div>
+    </main>
+    <!--Waves Container-->
+    <!-- CSS Waves from goodkatz (https://codepen.io/goodkatz/pen/LYPGxQz) -->
+    <div>
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(184, 184, 29,0.7"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(184, 184, 29,0.5)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(184, 184, 29,0.3)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="7"
+            fill="rgba(184, 184, 29)"
+          />
+        </g>
+      </svg>
     </div>
+    <!--Waves end-->
+    <!--Header ends-->
 
-    <nav class="nav-b">
-      <section class="first-sec">
-        <ul class="nav-list">
-          <div class="content centered-elements">
-            <button class="btn btn--2">
-              Inicio
-            </button>
-            <button class="btn btn--2">
-              Nosotros
-            </button>
-            <button class="btn btn--2">
-              Demos
-            </button>
-            <button class="btn btn--2">
-              Contacto
-            </button>
-            <div class="icon-logvar">
-              <div class="post">
-                <a href="#"><img src="./assets/img/nav -icon/login.png" alt="Login">
-                  <p>Login</p>
+    <!--Content starts-->
+    <section class="accordian-content">
+      <div class="accordian-story">
+        <h1 class="accordian-title">Proximamente ...</h1>
+        <div class="embed-container">
+          <div class="accordian">
+            <ul>
+              <li>
+                <div class="image_title">
+                  <a href="#">Tortugas-Ninja</a>
+                </div>
+                <a href="#">
+                  <img src="./assets/img/nosotros-img-slid/tortu-ninja.png" />
                 </a>
+              </li>
+              <li>
+                <div class="image_title">
+                  <a href="#">Comix-Zone</a>
+                </div>
+                <a href="#">
+                  <img src="./assets/img/nosotros-img-slid/comix-zone.png" />
+                </a>
+              </li>
+              <li>
+                <div class="image_title">
+                  <a href="#">Samurai-Jack</a>
+                </div>
+                <a href="#">
+                  <img src="./assets/img/nosotros-img-slid/samurai-jack.png" />
+                </a>
+              </li>
+              <li>
+                <div class="image_title">
+                  <a href="#">Super-Mario</a>
+                </div>
+                <a href="#">
+                  <img src="./assets/img/nosotros-img-slid/super-mario.png" />
+                </a>
+              </li>
+              <li>
+                <div class="image_title">
+                  <a href="#">Earthworm-Jim</a>
+                </div>
+                <a href="#">
+                  <img src="./assets/img/nosotros-img-slid/earthworm-jim.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content" class="content">
+      <div class="inner-content">
+        <div class="inner-content-text content__TextLeft">
+          <div id="about" class="inter-content-subtitle">Software</div>
+
+          <div class="inner-content-title">Nuestra Empresa</div>
+
+          <div class="inner-content-para">
+            <p>
+              Nuestra empresa se especializa en la venta y desarrollo de juegos,
+              abarcando tanto el ámbito 2D como el 3D. Contamos con un equipo de
+              profesionales altamente capacitados y apasionados por la creación
+              de experiencias interactivas. La diversidad de habilidades en
+              nuestro equipo nos permite desarrollar juegos para diversas
+              plataformas, adaptándonos a las necesidades y demandas del mercado
+              actual.
+            </p>
+          </div>
+        </div>
+
+        <div class="inner-image-container container__ImageRight">
+          <div class="inner-content-image content__ImageRight">
+            <img
+              class="section-images"
+              src="./assets/img/nosotros-img-icon/adventure2d.gif"
+              style="object-position: 25% 50%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-content">
+        <div class="inner-content-text content__TextRight">
+          <div id="features" class="inter-content-subtitle">Hardware</div>
+
+          <div class="inner-content-title">Líder En Ventas</div>
+
+          <div class="inner-content-para">
+            <p>
+              Somos una destacada compañía que se ha consolidado en el mercado
+              gracias a su compromiso con la innovación y la calidad en el
+              sector del entretenimiento electrónico. Con una amplia gama de
+              productos que abarcan desde consolas de última generación , juegos
+              desarrollados a medida del cliente, hasta accesorios y servicios
+              relacionados, la empresa se ha destacado por su constante búsqueda
+              de la excelencia tecnológica.
+            </p>
+          </div>
+        </div>
+
+        <div class="inner-image-container container__ImageLeft">
+          <div class="inner-content-image content__ImageLeft">
+            <img
+              class="section-images"
+              src="https://cdn2.coppel.com/wcsstore/AuroraStorefrontAssetStore/emarketing/1stlevel/2020/octubre/Consolas_y_Videojuegos/Banner_Web_Coppel_550X640.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing-container" class="pricing-container">
+      <div id="pricing" class="pricing-title">
+        <h2>Demos</h2>
+      </div>
+
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/img/fotos-cards/mortal-kombat.png"
+                  alt="mortal-kombat"
+                />
               </div>
-              <div class="post">
-                <a href="#"><img src="./assets/img/nav -icon/register.png" alt="register">
-                  <p>Registro</p>
-                </a>
+              <div class="overlay fade">
+                <h6>Mortal Kombat X</h6>
+                <p>
+                  Un clasico reversionado con nuevos escenarios y personajes.
+                </p>
+                <button class="btn btn-default overlay-btn">Descargar</button>
               </div>
             </div>
           </div>
-        </ul>
-      </section>
-    </nav>
-  </header>
-
-  <main class="main">
-
-    <section class="home">
-
-      <div class="img-home">
-        <img src="./assets/img/fotos-portada/pacman.gif"  alt="pacman-gif">
-      </div>
-
-      <div class="portada">
-
-        <div class="typewriter">
-          <h1>Box-Games Experience.</h1>
         </div>
-
-        <p class="res-port">Descarga, compra y crea los mejores juegos retro, registrate y accede a nuestros
-          exclusivos beneficios. Bienvenidos a una nueva experiencia, Bienvenidos a Box-Games. </p>
-      </div>
-    </section>
-
-    <section class="nosotros">
-      <div>
-        <div class="our-emp">
-          <h2>Nuestra empresa</h2>
-        
-
-          <p>Somos una empresa dedicada a la venta y desarrollo de juegos en 2D Y 3D,
-            contamos con un amplio equipo de profesionales capacitados para crear juegos en distintas
-            plataformas, no solo creamos juegos,
-            creamos historias.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="images-nos">
-        <div class="title-icon">
-          <h3>Juegos fisicos/online</h3><img src="./assets/img/nosotros-img-icon/juegos.png" alt="juegos">
-        </div>
-        <div class="title-icon">
-          <h3>Envios internacionales</h3><img src="./assets/img/nosotros-img-icon/envios-int.png" alt="envios">
-        </div>
-        <div class="title-icon">
-          <h3>Servicio tecnico 24 hs</h3><img src="./assets/img/nosotros-img-icon/servicio-tecnico.png" alt="servicio-tecnico">
-        </div>
-        <div class="title-icon">
-          <h3>Demos 2D/3D gratis</h3><img src="./assets/img/nosotros-img-icon/demos-free.png" alt="demos">
-        </div>
-        <div class="title-icon">
-          <h3>Pagos protegidos</h3><img src="./assets/img/nosotros-img-icon/pagos-protegidos.png" alt="pago-seguro">
-        </div>
-      </div>
-
-      <div class="img-accord">
-
-        <h4>proximos juegos gratis ↓ ↓</h4>
-
-        <div class="accordian">
-          <ul>
-            <li>
-              <div class="image_title">
-                <a href="#">Super-Mario</a>
+        <div class="flex-item">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/img/fotos-cards/pokemon.png" alt="Pokémon" />
               </div>
-              <a href="#">
-                <img src="./assets/img/nosotros-img-slid/super-mario.png" />
-              </a>
-            </li>
-            <li>
-              <div class="image_title">
-                <a href="#">Tortugas-Ninja</a>
+              <div class="overlay fade">
+                <h6>Pokémon</h6>
+                <p>
+                  Pokemon crystal sin duda es uno de los mejores juegos de rol
+                  para niños y adultos.
+                </p>
+                <button class="btn btn-default overlay-btn">Descargar</button>
               </div>
-              <a href="#">
-                <img src="./assets/img/nosotros-img-slid/tortu-ninja.png" />
-              </a>
-            </li>
-            <li>
-              <div class="image_title">
-                <a href="#">Samurai-Jack</a>
-              </div>
-              <a href="#">
-                <img src="./assets/img/nosotros-img-slid/samurai-jack.png" />
-              </a>
-            </li>
-            <li>
-              <div class="image_title">
-                <a href="#">Comix-Zone</a>
-              </div>
-              <a href="#">
-                <img src="./assets/img/nosotros-img-slid/comix-zone.png" />
-              </a>
-            </li>
-            <li>
-              <div class="image_title">
-                <a href="#">Earthworm-Jim</a>
-              </div>
-              <a href="#">
-                <img src="./assets/img/nosotros-img-slid/earthworm-jim.png" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="demos">
-      <h5>Demos</h5>
-    </div>
-
-    <div id="demo">
-      <p id="demos">Disfruta de los mejores demos completamente gratis. Cada mes se actualizaran para que puedas seguir jugando, al final de cada mes, el demo que mas descargas obtuvo se sube completo.
-      </p>
-    </div>
-
-    <section id="cards-container">
-
-
-
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-img">
-            <img src="./assets/img/fotos-cards/mortal-kombat.png" alt="mortal-kombat">
-          </div>
-          <div class="overlay fade">
-            <h6>Mortal Kombat</h6>
-            <p>Un clasico reversionado con nuevos escenarios y personajes.</p>
-            <button class="btn btn-default overlay-btn">Descargar</button>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-img">
-            <img src="./assets/img/fotos-cards/pokemon.png" alt="pokemon">
-          </div>
-          <div class="overlay fade">
-            <h6>Pokemon</h6>
-            <p>Pokemon crystal sin duda es uno de los mejores juegos de rol para niños y adultos.</p>
-            <button class="btn btn-default overlay-btn">Descargar</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-img">
-            <img src="./assets/img/fotos-cards/street-fighter.png" alt="street-fighter">
-          </div>
-          <div class="overlay fade">
-            <h6>Street Fighter</h6>
-            <p>Otro clasico reversionado con increibles escenarios y nuevas tecnicas.</p>
-            <button class="btn btn-default overlay-btn">Descargar</button>
+        <div class="flex-item">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/img/fotos-cards/street-fighter.png"
+                  alt="Street-Fighter"
+                />
+              </div>
+              <div class="overlay fade">
+                <h6>Street-Fighter 2</h6>
+                <p>
+                  clasico reversionado con increibles escenarios y nuevas
+                  tecnicas.
+                </p>
+                <button class="btn btn-default overlay-btn">Descargar</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contacto">
+    <section id="contacto-container" class="contacto-container">
+      <h2>Contacto</h2>
 
-      <div class="demos">
-        <h5>Contacto</h5>
+      <div id="phone">
+        <h3>☎️: 4326-5709</h3>
+        <br />
+        <h3>📅: Lunes-Viernes</h3>
+        <br />
+        <h3>⌚: 08:00 am. | 17:00 pm.</h3>
+        <br />
+        <h3>✉️ box-support@hotmail.com</h3>
+        <br />
       </div>
 
-      <div id="demo">
-        <h4 id="redes">Seguinos en redes sociales ↓ ↓ ↓ </h4>
-      </div>
-
-      <div class="social-m">
-
-
-        <div class="foot-icon">
-          <ul class="social-icons">
-            <li><i class="fa wp-icon fa-facebook-f fa-lg"></i></li>
-            <li><i class="fa wp-icon fa-linkedin fa-lg"></i></li>
-            <li><i class="fa wp-icon fa-twitter fa-lg"></i></li>
-            <li><i class="fa wp-icon fa-instagram fa-lg"></i></li>
-            <li><i class="fa fa-whatsapp"></i></li>
-            <li><i class="fa wp-icon fa-youtube fa-lg"></i></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="iframe">
-        <div id="phone">
-          <h3>📅: Lunes-Viernes </h3>
-          <h3>⌚: 08:00 am. | 17:00 pm.</h3>
-          <h3>☎️: 4326-5709</h3>
-          <h3>✉️ box-support@hotmail.com </h3>
-
-
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13124.910316281283!2d-58.40592325!3d-34.6742053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665431267360!5m2!1ses-419!2sar"
-          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13124.910316281283!2d-58.40592325!3d-34.6742053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1665431267360!5m2!1ses-419!2sar"
+        width="300"
+        height="200"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
 
-  </main>
+    <footer>
+      <p>Operated By FBS Cloud ☁️ Network</p>
+    </footer>
 
-  <footer>
-    <p>Operated By FBS Cloud ☁️ Network</p>
-  </footer>
+    <script src="redirect.js"></script>
+    <!--Content ends-->
 
-
-</body>
-
+  </body>
 </html>
